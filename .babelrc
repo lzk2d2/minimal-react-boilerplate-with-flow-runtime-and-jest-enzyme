@@ -1,0 +1,16 @@
+{
+  "presets": [
+    "@babel/preset-env",
+    "@babel/preset-react",
+    "@babel/flow"
+  ], 
+  "plugins": [
+    ["@babel/plugin-proposal-decorators", { "legacy": true }],
+    "@babel/plugin-proposal-class-properties",
+    "transform-flow-strip-types",
+    ["flow-runtime", {
+      "assert": true,
+      "annotate": true
+    }]
+  ]
+}
